@@ -7,5 +7,5 @@
     - name: update all packages
       ansible.builtin.apt:
         upgrade: dist
-        upgrade_cache: yes
+        update: yes
       when: ansible_distribution == "Ubuntu"
